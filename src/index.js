@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Router from './Route';
 import * as serviceWorker from './serviceWorker';
 
 import { createStore } from 'redux';
@@ -12,7 +12,7 @@ let store = createStore(todoApp);
 
 ReactDOM.render(
     <Provider store={store}>
-        <App />
+        <Router />
     </Provider>,
     document.getElementById('root')
 );
